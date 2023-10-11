@@ -1,7 +1,6 @@
-// components/Navbar.js
 'use client'
-import { useState } from 'react';
-import Link from 'next/link';
+import Link from "next/link";
+import { useState } from "react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,10 +10,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-500 p-4">
+    <nav className="bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-700 p-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
-          {/* <a className="text-white text-xl font-semibold">Your Logo</a> */}
+          {/* <a className="text-2xl font-bold text-white">Your Logo</a> */}
         </Link>
         <div className="lg:hidden">
           <button
@@ -37,24 +36,20 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <ul
-          className={`${
-            menuOpen ? 'block' : 'hidden'
-          } lg:flex lg:space-x-4`}
-        >
+        <ul className={`lg:flex space-x-4 ${menuOpen ? "block" : "hidden"}`}>
           <li>
             <Link href="/">
-              <p className="text-white hover:text-gray-300 cursor-pointer">Home</p>
+              <p className="text-white hover:text-gray-300">Home</p>
             </Link>
           </li>
           <li>
             <Link href="/about">
-              <p className="text-white hover:text-gray-300 cursor-pointer">About</p>
+              <p className="text-white hover:text-gray-300">About</p>
             </Link>
           </li>
           <li>
             <Link href="/contact">
-              <p className="text-white hover:text-gray-300 cursor-pointer">Contact</p>
+              <p className="text-white hover:text-gray-300">Contact</p>
             </Link>
           </li>
         </ul>
