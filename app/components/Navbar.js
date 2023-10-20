@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link";
 import { useState } from "react";
+import { Separator } from "@/components/ui/separator";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-700 p-4">
+    <nav className="bg-gradient-to-r from-bgGradRed to-bgGradPurp text-white font-sans p-6">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
           {/* <a className="text-2xl font-bold text-white">Your Logo</a> */}
@@ -36,20 +37,31 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <ul className={`lg:flex space-x-4 ${menuOpen ? "block" : "hidden"}`}>
+        <ul
+          className={`lg:flex lg:space-x-4 ${
+            menuOpen
+              ? "lg:hidden absolute top-16 left-0 w-full bg-gradient-to-r from-bgGradRed to-bgGradPurp"
+              : "hidden"
+          }`}
+        >
           <li>
             <Link href="/">
-              <p className="text-white hover:text-gray-300">Home</p>
+              <p className="text-white hover:text-gray-300 block py-2 px-4">Home</p>
             </Link>
           </li>
           <li>
             <Link href="/about">
-              <p className="text-white hover:text-gray-300">About</p>
+              <p className="text-white hover:text-gray-300 block py-2 px-4">About</p>
             </Link>
           </li>
           <li>
-            <Link href="/contact">
-              <p className="text-white hover:text-gray-300">Contact</p>
+            <Link href="/team">
+              <p className="text-white hover:text-gray-300 block py-2 px-4">Team</p>
+            </Link>
+          </li>
+          <li>
+            <Link href="/footer">
+              <p className="text-white hover:text-gray-300 block py-2 px-4">Contact Us</p>
             </Link>
           </li>
         </ul>
