@@ -4,8 +4,11 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <>
-      <h1>About Page</h1>
-    </>
+    <div className="flex h-screen">
+      <div className="w-1/2"></div>
+      <div className="justify-start w-1/2 bg-gray-950">
+        <h1>Hello</h1>
+      </div>
+    </div>
   );
 }

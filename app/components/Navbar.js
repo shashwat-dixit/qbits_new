@@ -23,7 +23,7 @@ const Navbar = () => {
             className="text-white hover:text-gray-300 focus:outline-none"
           >
             <svg
-              className="w-6 h-6"
+              className="w-8 h-8"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -47,42 +47,42 @@ const Navbar = () => {
         >
           <li>
             <Link href="/">
-              <p className="text-white hover:text-gray-300 block py-2 px-4">
+              <p className="text-white text-xl hover:text-gray-500 block py-2 px-4">
                 Home
               </p>
             </Link>
           </li>
           <li>
             <Link href="/about">
-              <p className="text-white hover:text-gray-300 block py-2 px-4">
+              <p className="text-white text-xl hover:text-gray-500 block py-2 px-4">
                 About
               </p>
             </Link>
           </li>
           <li>
             <Link href="/team">
-              <p className="text-white hover:text-gray-300 block py-2 px-4">
+              <p className="text-white text-xl hover:text-gray-500 block py-2 px-4">
                 Team
               </p>
             </Link>
           </li>
           <li>
             <Link href="/research">
-              <p className="text-white hover:text-gray-300 block py-2 px-4">
+              <p className="text-white text-xl hover:text-gray-500 block py-2 px-4">
                 Research
               </p>
             </Link>
           </li>
           <li>
             <Link href="/blog">
-              <p className="text-white hover:text-gray-300 block py-2 px-4">
+              <p className="text-white text-xl hover:text-gray-500 block py-2 px-4">
                 Blog
               </p>
             </Link>
           </li>
           <li>
             <Link href="/contact">
-              <p className="text-white hover:text-gray-300 block py-2 px-4">
+              <p className="text-white text-xl hover:text-gray-500 block py-2 px-4">
                 Contact Us
               </p>
             </Link>

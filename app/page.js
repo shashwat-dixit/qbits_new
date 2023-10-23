@@ -1,5 +1,7 @@
 import Link from "next/link";
-// import Navbar from "./components/Navbar";
+import { Input } from "@/components/ui/input"
+
+// import { Button } from "@/components/ui/button"
 
 export default function HomePage() {
   return (
@@ -12,7 +14,11 @@ export default function HomePage() {
         <p className="text-lg md:text-xl text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-purple-500 to-blue-600 animate__animated animate__fadeIn">
           Unlocking the Power of Quantum Computing
         </p>
-        
+        <Link href="/about">
+        <button class="text-xl bg-gray-200 border-slate-600 hover:bg-gradient-to-r from-purple-600 via-purple-500 to-blue-600 hover:text-white hover:border-transparent rounded py-3 px-6 m-2 md:m-4 lg:m-6 transition duration-300">
+          Get Started
+        </button>
+        </Link>
       </div>
     </div>
   );
