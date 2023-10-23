@@ -11,7 +11,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-bgGradRed to-bgGradPurp text-white font-sans p-4">
+    // <nav className="bg-gradient-to-r from-bgGradRed to-bgGradPurp text-white font-sans p-4">
+    <nav className="bg-gray-950 text-white font-sans p-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
           {/* <a className="text-2xl font-bold text-white">Your Logo</a> */}
@@ -40,7 +41,7 @@ const Navbar = () => {
         <ul
           className={`lg:flex lg:space-x-4 ${
             menuOpen
-              ? "lg:hidden absolute top-10 left-0 text-center w-full bg-gradient-to-r from-bgGradRed to-bgGradPurp"
+              ? "lg:hidden absolute top-10 left-0 text-center w-full bg-gray-950"
               : "hidden"
           }`}
         >

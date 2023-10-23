@@ -12,6 +12,7 @@ export default function HomePage() {
         <p className="text-lg md:text-xl text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-purple-500 to-blue-600 animate__animated animate__fadeIn">
           Unlocking the Power of Quantum Computing
         </p>
+        
       </div>
     </div>
   );

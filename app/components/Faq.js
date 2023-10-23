@@ -8,7 +8,7 @@ import {
 export default function Faq() {
   return (
     <div className="flex flex-col items-center justify-start h-3/4">
-      <h1 className="text-4xl sm:text-2xl font-bold mt-4 mb-6">
+      <h1 className="text-4xl sm:text-xl font-bold mt-4 mb-6 text-center">
         Frequently Asked Questions
       </h1>
       <Accordion type="single" collapsible className="w-1/2">
