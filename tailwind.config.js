@@ -19,6 +19,7 @@ module.exports = {
       colors: {
         bgGradRed: "#4568DC",
         bgGradPurp: "#B06AB3",
+        bgDark: "#000000",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
