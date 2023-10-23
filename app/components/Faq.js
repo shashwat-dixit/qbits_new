@@ -8,7 +8,7 @@ import {
 export default function Faq() {
   return (
     <div className="flex flex-col items-center justify-start h-3/4">
-      <h1 className="text-4xl sm:text-xl font-bold mt-4 mb-6 text-center">
+      <h1 className="text-3xl sm:text-2xl md:text-4xl lg:text-4xl font-bold mt-4 mb-6 text-center">
         Frequently Asked Questions
       </h1>
       <Accordion type="single" collapsible className="w-1/2">
@@ -45,7 +45,7 @@ export default function Faq() {
             when necessary.
           </AccordionContent>
         </AccordionItem>
-      </Accordion>{" "}
+      </Accordion>
       <Accordion type="single" collapsible className="w-1/2">
         <AccordionItem value="item-2">
           <AccordionTrigger>Another question</AccordionTrigger>

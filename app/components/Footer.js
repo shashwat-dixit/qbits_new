@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaDiscord, FaInstagram, FaLinkedin } from "react-icons/fa";
 
-export default function YourComponent() {
+export default function Footer() {
   return (
     // <div className="flex flex-col items-center justify-start h-1/4 bg-gray-900 text-white p-4">
     <div className="flex flex-col items-center justify-start h-1/4">
@@ -11,7 +11,7 @@ export default function YourComponent() {
           {/* <img src="/your-logo.png" alt="Your Logo" className="w-12 h-12 mr-4" />
           <img src="/your-logo-2.png" alt="Your Logo 2" className="w-12 h-12" /> */}
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center just">
           <a href="https://discord.com/invite/pJB5zKGPZt">
             <FaDiscord className="text-3xl mr-4" />
           </a>

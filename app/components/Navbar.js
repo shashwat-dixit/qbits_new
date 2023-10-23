@@ -11,11 +11,13 @@ const Navbar = () => {
   };
 
   return (
-    // <nav className="bg-gradient-to-r from-bgGradRed to-bgGradPurp text-white font-sans p-4">
-    <nav className="bg-gray-950 text-white font-sans p-4">
+    <nav className="bg-gray-950 text-white font-sans p-3">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
-          {/* <a className="text-2xl font-bold text-white">Your Logo</a> */}
+          {/* Temporary addition until the logo is not ready. */}
+          <p className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-center m-4  text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-purple-500 to-blue-600 animate__animated animate__fadeIn">
+            Q-BITS
+          </p>
         </Link>
         <div className="lg:hidden">
           <button
@@ -60,9 +62,9 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/team">
+            <Link href="/blog">
               <p className="text-white text-xl hover:text-gray-500 block py-2 px-4">
-                Team
+                Blog
               </p>
             </Link>
           </li>
@@ -74,12 +76,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/blog">
+            <Link href="/team">
               <p className="text-white text-xl hover:text-gray-500 block py-2 px-4">
-                Blog
+                Team
               </p>
             </Link>
           </li>
+
           <li>
             <Link href="/contact">
               <p className="text-white text-xl hover:text-gray-500 block py-2 px-4">
